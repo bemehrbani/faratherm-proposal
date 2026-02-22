@@ -52,7 +52,7 @@ export default function Architecture() {
 
             <div className="card card-accent animate-in delay-2">
                 <h3 style={{ color: 'var(--accent-teal)', marginTop: 0 }}>سناریو ۱ — وای‌فای خانه موجود است</h3>
-                <div style={{ fontSize: '0.88rem', direction: 'ltr', textAlign: 'left', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', lineHeight: 2 }}>
+                <div style={{ fontSize: '0.88rem', direction: 'rtl', textAlign: 'right', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', lineHeight: 2 }}>
                     <span style={{ color: 'var(--accent-warm)' }}>1.</span> ترموستات در حالت SETUP روشن می‌شود (هات‌اسپات)<br />
                     <span style={{ color: 'var(--accent-warm)' }}>2.</span> اپ دستگاه را روی IP قراردادی پیدا می‌کند (192.168.4.1)<br />
                     <span style={{ color: 'var(--accent-warm)' }}>3.</span> اطلاعات WiFi خانه به دستگاه ارسال می‌شود<br />
@@ -63,7 +63,7 @@ export default function Architecture() {
 
             <div className="card card-accent animate-in delay-3">
                 <h3 style={{ color: 'var(--accent-warm)', marginTop: 0 }}>سناریو ۲ — وای‌فای خانه موجود نیست</h3>
-                <div style={{ fontSize: '0.88rem', direction: 'ltr', textAlign: 'left', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', lineHeight: 2 }}>
+                <div style={{ fontSize: '0.88rem', direction: 'rtl', textAlign: 'right', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', lineHeight: 2 }}>
                     <span style={{ color: 'var(--accent-warm)' }}>1.</span> ترموستات در حالت SETUP روشن می‌شود (هات‌اسپات)<br />
                     <span style={{ color: 'var(--accent-warm)' }}>2.</span> اپ دستگاه را روی IP قراردادی پیدا می‌کند<br />
                     <span style={{ color: 'var(--accent-warm)' }}>3.</span> ترموستات خودش شبکه WiFi ایجاد می‌کند<br />

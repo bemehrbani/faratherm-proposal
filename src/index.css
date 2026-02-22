@@ -10,11 +10,11 @@
   --bg-card: #1A1D28;
   --bg-card-hover: #1F2330;
   --bg-surface: #242838;
-  
+
   --text-primary: #F0EDE8;
   --text-secondary: #9B978F;
   --text-muted: #6B6760;
-  
+
   --accent-warm: #E8A54B;
   --accent-warm-dim: rgba(232, 165, 75, 0.15);
   --accent-warm-glow: rgba(232, 165, 75, 0.4);
@@ -23,14 +23,14 @@
   --accent-red: #E85B5B;
   --accent-red-dim: rgba(232, 91, 91, 0.12);
   --accent-blue: #5B8BE8;
-  
+
   --border-subtle: rgba(255, 255, 255, 0.06);
   --border-active: rgba(232, 165, 75, 0.3);
-  
+
   /* Typography */
   --font-body: 'Vazirmatn', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-  
+
   /* Spacing */
   --space-xs: 4px;
   --space-sm: 8px;
@@ -40,18 +40,18 @@
   --space-2xl: 48px;
   --space-3xl: 64px;
   --space-4xl: 96px;
-  
+
   /* Radius */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
   --radius-xl: 24px;
-  
+
   /* Shadows */
   --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.3);
   --shadow-elevated: 0 8px 32px rgba(0, 0, 0, 0.4);
   --shadow-glow: 0 0 40px var(--accent-warm-dim);
-  
+
   /* Sidebar */
   --sidebar-width: 280px;
 }
@@ -60,7 +60,9 @@
    Reset & Base
    ═══════════════════════════════════════════════════════ */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -80,6 +82,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* RTL enforcement for all text elements */
+ol,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+th,
+label,
+span,
+div {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Exceptions: elements that should remain LTR */
+code,
+pre,
+.arch-flow,
+.phone-status-bar,
+[dir="ltr"],
+.ltr {
+  direction: ltr;
+  text-align: left;
 }
 
 a {
@@ -228,7 +261,7 @@ img {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 95;
 }
 
@@ -820,39 +853,39 @@ p {
     padding: var(--space-xl) var(--space-lg);
     padding-top: calc(56px + var(--space-xl));
   }
-  
+
   .sidebar {
     transform: translateX(100%);
   }
-  
+
   .sidebar.open {
     transform: translateX(0);
   }
-  
+
   .mobile-header {
     display: flex;
   }
-  
+
   .mobile-overlay.open {
     display: block;
   }
-  
+
   .page-title {
     font-size: 1.6rem;
   }
-  
+
   .card-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .arch-flow {
     flex-direction: column;
   }
-  
+
   .arch-arrow {
     transform: rotate(90deg);
   }
-  
+
   :root {
     --sidebar-width: 260px;
   }
@@ -863,7 +896,7 @@ p {
     width: 280px;
     height: 560px;
   }
-  
+
   .spec-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -874,8 +907,15 @@ p {
    ═══════════════════════════════════════════════════════ */
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-in {
@@ -883,7 +923,18 @@ p {
   opacity: 0;
 }
 
-.delay-1 { animation-delay: 0.1s; }
-.delay-2 { animation-delay: 0.2s; }
-.delay-3 { animation-delay: 0.3s; }
-.delay-4 { animation-delay: 0.4s; }
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
