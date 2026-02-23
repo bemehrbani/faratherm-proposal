@@ -9,6 +9,8 @@ import UserStories from './pages/UserStories'
 import Prototype from './pages/Prototype'
 import Scope from './pages/Scope'
 import Timeline from './pages/Timeline'
+import Market from './pages/Market'
+import Partnership from './pages/Partnership'
 import { useState } from 'react'
 
 export default function App() {
@@ -33,6 +35,8 @@ export default function App() {
           <Route path="/prototype" element={<Prototype />} />
           <Route path="/business/scope" element={<Scope />} />
           <Route path="/business/timeline" element={<Timeline />} />
+          <Route path="/market" element={<Market />} />
+          <Route path="/partnership" element={<Partnership />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>

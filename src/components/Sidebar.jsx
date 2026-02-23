@@ -35,6 +35,13 @@ const sections = [
             { to: '/business/timeline', icon: '◫', label: 'زمان‌بندی پروژه' },
         ]
     },
+    {
+        title: 'مشارکت',
+        links: [
+            { to: '/market', icon: '◉', label: 'فرصت بازار' },
+            { to: '/partnership', icon: '◈', label: 'پیشنهاد مشارکت' },
+        ]
+    },
 ]
 
 export default function Sidebar({ open, onClose }) {

@@ -100,6 +100,20 @@ export default function Scope() {
                     <li>لوگو و هویت بصری (در صورت وجود)</li>
                 </ul>
             </div>
+
+            <h2 className="animate-in delay-4">پیش‌نیازهای مشارکت (در صورت انتخاب مسیر B)</h2>
+            <div className="card animate-in delay-4" style={{ borderRight: '3px solid var(--accent-warm)' }}>
+                <p style={{ marginTop: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    در صورت تصمیم برای مشارکت استراتژیک (سهامی) به جای قرارداد پروژه‌ای، موارد زیر باید قبل از شروع توسعه نهایی شود:
+                </p>
+                <ul className="feature-list">
+                    <li>توافق‌نامه بنیان‌گذاران (Founders Agreement) — تقسیم سهام، vesting، نقش‌ها</li>
+                    <li>تصمیم‌گیری درباره ساختار حقوقی (ثبت شرکت مشترک در ایران)</li>
+                    <li>تعریف سرمایه اولیه هر طرف (سخت‌افزار فراالکتریک vs. کار نرم‌افزاری پمگروپ)</li>
+                    <li>توافق روی مدل درآمدی و تقسیم سود</li>
+                    <li>تعریف شرایط خروج (exit clause) برای هر طرف</li>
+                </ul>
+            </div>
         </div>
     )
 }
